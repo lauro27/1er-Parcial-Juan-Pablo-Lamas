@@ -65,7 +65,7 @@ namespace Entidades
         }
         public override string ToString()
         {
-            return this.codigoDeBarras + "-" + this.Nombre + " - $" + this.precio;
+            return this.codigoDeBarras + "-" + this.Nombre + " - $" + this.precio + " X"+this.Cantidad;
         }
 
         public static int comparaCodigos(List<Producto> lista, Producto p)
