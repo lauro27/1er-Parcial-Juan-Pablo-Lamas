@@ -13,6 +13,7 @@ namespace Entidades
         double precio;
         int cantidad;
         string codigoDeBarras;
+       
 
         public string CodigoDeBarras { get => codigoDeBarras; }
         public string Nombre { get => nombre; }
@@ -31,6 +32,7 @@ namespace Entidades
                 }
             } 
         }
+        
 
         public Producto(string codigoDeBarras, string nombre, double precio, int cantidad)
         {
@@ -80,6 +82,47 @@ namespace Entidades
                 index++;
             }
             return -1;
+        }
+
+        public static List<Producto> listarUrgentes(List<Producto> lista)
+        {
+            List<Producto> urgentes = new List<Producto>();
+            foreach (Producto producto in lista)
+            {
+                if (producto.Cantidad <= 10)
+                {
+                    urgentes.Add(producto);
+                }
+            }
+            return urgentes;
+        }
+
+        public static explicit operator Producto(string producto)
+        {
+            string[] elementos = producto.Split(',');
+            
+            int cantidad;
+            try 
+            { 
+                cantidad = int.Parse(elementos[3]); 
+            }
+            catch (Exception) 
+            { 
+                cantidad = 0; 
+            }
+            
+            double precio;
+            try 
+            {
+                elementos[2] = elementos[2].Replace('.', ',');
+                precio = double.Parse(elementos[2]);
+            }
+            catch (Exception) 
+            { 
+                precio = 0;
+            }
+
+            return new Producto(elementos[0],elementos[1],precio,cantidad);
         }
     }
 }

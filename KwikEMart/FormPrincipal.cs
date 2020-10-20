@@ -25,37 +25,37 @@ namespace KwikEMart
         double precioTotal = 0;
         public FormPrincipal()
         {
-            debugProductos += new Producto("LI0094", "Cif Lavandina en gel", 50, 55);
-            debugProductos += new Producto("LA0063", "Leche Ilolay", 20, 44);
-            debugProductos += new Producto("HI0041", "Papel Higienico", 30.25, 5);
-            debugProductos += new Producto("LA0089", "Manteca La Paulina", 20.50, 76);
-            debugProductos += new Producto("HO0097", "Juego de Toallas", 300.46, 11);
-            debugProductos += new Producto("TE0077", "Secador de pelo Philips", 1999.99, 3);
-            debugProductos += new Producto("CO0053", "Gaseosa 1.5L Pepsi", 90.15, 30);
-            debugProductos += new Producto("AL0071", "Papas Lays 150g", 100, 30);
-            debugProductos += new Producto("AL0069", "Fideos Matarazo Spagetti", 45, 89);
-            debugProductos += new Producto("AL0057", "Galletitas rellenas OREO", 73, 59);
-            debugProductos += new Producto("AL0052", "Salsa lista Knorr", 23, 29);
-            debugProductos += new Producto("AL0043", "Pure de papa Maggi", 73, 42);
-            debugProductos += new Producto("CO0046", "Sopa instantanea Maruchan", 41, 12);
-            debugProductos += new Producto("AL0048", "Choclo enlatado Arcor", 72, 15);
-            debugProductos += new Producto("AL0040", "Jugo de Naranja Cepita", 48, 22);
-            debugProductos += new Producto("HI0008", "Toallitas diurnas Kotex", 25, 33);
-            debugProductos += new Producto("HI0006", "Rexona Antitranspirante", 32, 61);
-            debugProductos += new Producto("LI0004", "Jabon liquido Magistral", 42.64, 4);
-            debugProductos += new Producto("AL0028", "Agua mineral 2L Villa del Sur", 110, 20);
-            debugProductos += new Producto("CO0017", "Pechuga de Pollo", 99, 6);
-            debugProductos += new Producto("CO0015", "Empanada de Carne", 37, 122);
-            debugProductos += new Producto("HI0014", "Curitas pack 12u", 105, 15);
-            debugProductos += new Producto("ES0013", "Lapicera Bic 6u", 40, 99);
-            debugProductos += new Producto("AL0003", "Galletas saladas x3", 150, 24);
-            debugProductos += new Producto("AL0009", "Nachos 200g", 5, 6);
-            debugProductos += new Producto("AL0010", "Caldo en cubos Knor", 5, 6);
-            debugProductos += new Producto("AL0011", "Arroz Gallo ORO", 5, 6);
-            debugProductos += new Producto("LI0021", "Limpia pisos Poett", 5, 6);
-            debugProductos += new Producto("LI0022", "Lavandina Ayudin", 5, 6);
-            debugProductos += new Producto("AL0030", "Salchichas Vienisima pack 12u", 5, 6);
-            debugProductos += new Producto("HI0025", "Jabon para baño Lux", 5, 6);
+            debugProductos += (Producto)"LI0094,Cif Lavandina en gel,50,55";
+            debugProductos += (Producto)"LA0063,Leche Ilolay,20,44";
+            debugProductos += (Producto)"HI0041,Papel Higienico,30.25,5";
+            debugProductos += (Producto)"LA0089,Manteca La Paulina, 20.50, 76";
+            debugProductos += (Producto)"HO0097,Juego de Toallas, 300.46, 11";
+            debugProductos += (Producto)"TE0077,Secador de pelo Philips, 1999.99, 3";
+            debugProductos += (Producto)"CO0053,Gaseosa 1.5L Pepsi, 90.15, 30";
+            debugProductos += (Producto)"AL0071,Papas Lays 150g, 100, 30";
+            debugProductos += (Producto)"AL0069,Fideos Matarazo Spagetti, 45, 89";
+            debugProductos += (Producto)"AL0057,Galletitas rellenas OREO, 73, 59";
+            debugProductos += (Producto)"AL0052,Salsa lista Knorr, 23, 29";
+            debugProductos += (Producto)"AL0043,Pure de papa Maggi, 73, 42";
+            debugProductos += (Producto)"CO0046,Sopa instantanea Maruchan, 41, 12";
+            debugProductos += (Producto)"AL0048,Choclo enlatado Arcor, 72, 15";
+            debugProductos += (Producto)"AL0040,Jugo de Naranja Cepita, 48, 22";
+            debugProductos += (Producto)"HI0008,Toallitas diurnas Kotex, 25, 33";
+            debugProductos += (Producto)"HI0006,Rexona Antitranspirante, 32, 61";
+            debugProductos += (Producto)"LI0004,Jabon liquido Magistral, 42.64, 4";
+            debugProductos += (Producto)"AL0028,Agua mineral 2L Villa del Sur, 110, 20";
+            debugProductos += (Producto)"CO0017,Pechuga de Pollo, 99, 6";
+            debugProductos += (Producto)"CO0015,Empanada de Carne, 37, 122";
+            debugProductos += (Producto)"HI0014,Curitas pack 12u, 105, 15";
+            debugProductos += (Producto)"ES0013,Lapicera Bic 6u, 40, 99";
+            debugProductos += (Producto)"AL0003,Galletas saladas x3, 150, 24";
+            debugProductos += (Producto)"AL0009,Nachos 200g, 5, 6";
+            debugProductos += (Producto)"AL0010,Caldo en cubos Knor, 5, 6";
+            debugProductos += (Producto)"AL0011,Arroz Gallo ORO, 5, 6";
+            debugProductos += (Producto)"LI0021,Limpia pisos Poett, 5, 6";
+            debugProductos += (Producto)"LI0022,Lavandina Ayudin, 5, 6";
+            debugProductos += (Producto)"AL0030,Salchichas Vienisima pack 12u, 5, 6";
+            debugProductos += (Producto)"HI0025,Jabon para baño Lux, 5, 6";
 
             debugEmpleados += new Empleado(11111111, "Apu", "Nahasapeemapetilon", "Paul Mc Cartney");
             debugEmpleados += new Empleado(22222222, "James", "Woods", "tu eres tu y yo soy yo");
@@ -85,6 +85,7 @@ namespace KwikEMart
 
         private void ActualizarTodo()
         {
+            //renovar comboboxes y caja
             cboxCliente.Refresh();
             cboxEmpleado.Refresh();
             cboxNuevoProducto.Refresh();
@@ -95,6 +96,7 @@ namespace KwikEMart
             cboxNuevoProducto.Update();
             dataCaja.Update();
 
+            //nuevo total
             precioTotal = 0;
             foreach (Producto producto in caja)
             {
@@ -201,15 +203,7 @@ namespace KwikEMart
         }
         private void MenuItemInventarioUrgente_Click(object sender, EventArgs e)
         {
-            List<Producto> urgentes = new List<Producto>();
-            foreach (Producto producto in productos)
-            {
-                if (producto.Cantidad <= 10)
-                {
-                    urgentes.Add(producto);
-                }
-            }
-            FormLista frmUrgentes = new FormLista(urgentes);
+            FormLista frmUrgentes = new FormLista(Producto.listarUrgentes(productos));
             frmUrgentes.ShowDialog();
         }
         private void listadoDeClientesToolStripMenuItem_Click(object sender, EventArgs e)
@@ -254,7 +248,8 @@ namespace KwikEMart
             frmAgregar.ShowDialog();
             if (frmAgregar.DialogResult == DialogResult.OK)
             {
-                Cliente c = new Cliente(frmAgregar.Dni, frmAgregar.Nombre, frmAgregar.Apellido);
+                string cliente = frmAgregar.Dni.ToString() + ',' + frmAgregar.Nombre + ',' + frmAgregar.Apellido;
+                Cliente c = cliente;
                 clientes.Add(c);
                 cboxCliente.Items.Add(c);
                 cboxCliente.SelectedIndex = 0;

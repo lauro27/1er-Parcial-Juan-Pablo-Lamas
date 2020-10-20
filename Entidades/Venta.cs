@@ -12,6 +12,7 @@ namespace Entidades
         Empleado empleado;
         Cliente cliente;
         double total = 0;
+        DateTime fecha;
 
         public Venta(List<Producto> productos, Empleado empleado, Cliente cliente) 
         {
@@ -22,6 +23,8 @@ namespace Entidades
             {
                 this.total += (p.Precio * p.Cantidad);
             }
+            this.total = Math.Round(this.total, 2);
+            this.fecha = DateTime.Now;
         }
         public Venta(List<Producto> productos, Empleado empleado, Cliente cliente, double total):this(productos,empleado,cliente)
         {
@@ -32,10 +35,11 @@ namespace Entidades
         public Empleado Empleado { get => empleado; }
         public Cliente Cliente { get => cliente; }
         public double Total { get => total; }
-
+        public DateTime Fecha { get => fecha; }
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
+            sb.AppendLine("Fecha: " + this.fecha.ToString());
             sb.AppendLine("Cliente: " + Cliente.Apellido + ", " + Cliente.Nombre + " - DNI: " + Cliente.Dni.ToString());
             sb.AppendLine("Empleado: " + Empleado.ToString());
             sb.AppendLine("Productos:");

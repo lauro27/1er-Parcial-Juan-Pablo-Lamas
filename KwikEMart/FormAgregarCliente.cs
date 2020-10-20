@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Entidades;
 
 namespace KwikEMart
 {
@@ -27,18 +28,17 @@ namespace KwikEMart
         private void btnOK_Click(object sender, EventArgs e)
         {
             bool attempt = true;
-            try
+            //Revisión DNI
+            lblDni.ForeColor = Color.Black;
+            int Dni = Persona.validacionNum(txtDni.Text);
+            if (Dni <= 0)
             {
-                lblDni.ForeColor = Color.Black;
-                Dni = int.Parse(txtDni.Text);
-            }
-            catch (Exception)
-            {
-                lblDni.ForeColor = Color.Red;
                 attempt = false;
+                lblDni.ForeColor = Color.Red;
             }
+            //Revision nombre
             lblNombre.ForeColor = Color.Black;
-            if (txtNombre.Text.Trim() == "")
+            if (!Persona.validacionString(txtNombre.Text))
             {
                 lblNombre.ForeColor = Color.Red;
                 attempt = false;
@@ -47,8 +47,9 @@ namespace KwikEMart
             {
                 Nombre = txtNombre.Text.Trim();
             }
+            //Revision apellido
             lblApellido.ForeColor = Color.Black;
-            if (txtApellido.Text.Trim() == "")
+            if (!Persona.validacionString(txtApellido.Text))
             {
                 lblApellido.ForeColor = Color.Red;
                 attempt = false;

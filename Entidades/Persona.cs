@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
-    public class Persona
+    public abstract class Persona
     {
         int dni;
         string nombre, apellido;
@@ -24,6 +24,29 @@ namespace Entidades
         public override string ToString()
         {
             return this.Apellido + " " + this.Nombre + " - " + this.Dni;
+        }
+
+        public static bool validacionString(string validado)
+        {
+            if(validado.Trim() != "" & !validado.All(char.IsDigit))
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public static int validacionNum(string validado)
+        {
+            int retorno;
+            try
+            {
+                retorno = int.Parse(validado);
+            }
+            catch (Exception)
+            {
+                return -1;
+            }
+            return retorno;
         }
     }
 }
