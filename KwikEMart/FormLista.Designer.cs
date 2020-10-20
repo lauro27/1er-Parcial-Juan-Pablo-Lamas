@@ -38,7 +38,7 @@
             this.btnAceptar.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.btnAceptar.Location = new System.Drawing.Point(12, 374);
             this.btnAceptar.Name = "btnAceptar";
-            this.btnAceptar.Size = new System.Drawing.Size(342, 23);
+            this.btnAceptar.Size = new System.Drawing.Size(512, 23);
             this.btnAceptar.TabIndex = 0;
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
@@ -54,7 +54,7 @@
             this.dataLista.Location = new System.Drawing.Point(12, 12);
             this.dataLista.Name = "dataLista";
             this.dataLista.ReadOnly = true;
-            this.dataLista.Size = new System.Drawing.Size(342, 356);
+            this.dataLista.Size = new System.Drawing.Size(512, 356);
             this.dataLista.TabIndex = 1;
             this.dataLista.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataLista_CellContentDoubleClick);
             // 
@@ -63,7 +63,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aqua;
-            this.ClientSize = new System.Drawing.Size(366, 409);
+            this.ClientSize = new System.Drawing.Size(536, 409);
             this.Controls.Add(this.dataLista);
             this.Controls.Add(this.btnAceptar);
             this.Font = new System.Drawing.Font("Perfect DOS VGA 437 Win", 11.25F);
