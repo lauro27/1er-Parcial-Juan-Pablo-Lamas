@@ -262,6 +262,7 @@
             this.dataCaja.GridColor = System.Drawing.Color.Aqua;
             this.dataCaja.Location = new System.Drawing.Point(6, 21);
             this.dataCaja.Name = "dataCaja";
+            this.dataCaja.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
             this.dataCaja.Size = new System.Drawing.Size(670, 161);
             this.dataCaja.TabIndex = 0;
             // 

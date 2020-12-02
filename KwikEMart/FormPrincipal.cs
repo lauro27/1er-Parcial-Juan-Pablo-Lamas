@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Entidades;
+using System.IO;
 
 namespace KwikEMart
 {
@@ -277,8 +278,19 @@ namespace KwikEMart
                 {
                     venta = new Venta(caja.ToList(), empleados[cboxEmpleado.SelectedIndex], new Cliente(0, "N/A", "N/A"), precioTotal);
                 }
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"C:\Users\Juan\Documents\Facultad\sell.wav");
+                player.Play();
                 MessageBox.Show(venta.ToString());
                 ventas.Add(venta);
+                string nombreArchivo = DateTime.Now.ToString().Replace(@"/", "-") + ".txt";
+                nombreArchivo = nombreArchivo.Replace(':', '-');
+                using (StreamWriter sw = new StreamWriter(nombreArchivo))
+                {
+                    foreach(string s in venta.ToString().Split('\n')) 
+                    {
+                        sw.WriteLine(s);
+                    }
+                }
                 caja.Clear();
             }
         }

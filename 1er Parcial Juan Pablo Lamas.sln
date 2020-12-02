@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Enti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KwikEMart", "KwikEMart\KwikEMart.csproj", "{5AFA13A8-5336-4645-A46C-40A38ADB2E49}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestUnitario", "TestUnitario\TestUnitario.csproj", "{8E4DD19A-0246-4C9D-B232-A3F0FA1C6E3B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5AFA13A8-5336-4645-A46C-40A38ADB2E49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AFA13A8-5336-4645-A46C-40A38ADB2E49}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AFA13A8-5336-4645-A46C-40A38ADB2E49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E4DD19A-0246-4C9D-B232-A3F0FA1C6E3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E4DD19A-0246-4C9D-B232-A3F0FA1C6E3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E4DD19A-0246-4C9D-B232-A3F0FA1C6E3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E4DD19A-0246-4C9D-B232-A3F0FA1C6E3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
